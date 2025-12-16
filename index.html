@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박상혁 | Frontend Developer</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <img class="profile" src="./images/me.jpeg" alt="프로필 사진" />
+        <h1>박상혁</h1>
+        <p class="role">Frontend Developer</p>
+        <p class="intro">
+          필요하다면 새로운 걸 배우고 도입하는 것을 꺼리지 않습니다. 무언가
+          만드는 것을 좋아하고 특히 색다른 인터페이스와 인터랙션, 그리고
+          애니메이션을 구현하는 것을 좋아합니다. 이로써 사용자의 자연스러운 행동
+          유도와 편한 사용을 끌어내려 합니다. DX를 위해 내부 로직 뿐만 아니라
+          사용처에서도 쉽게 사용할 수 있도록 공부하고 노력합니다.
+        </p>
+        <p class="contact">
+          <a
+            href="https://github.com/fecapark"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a href="mailto:fecapark@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            fecapark@gmail.com
+          </a>
+        </p>
+      </header>
+
+      <!-- Work Experience -->
+      <section class="section">
+        <h2>Work Experience.</h2>
+        <div class="item-block">
+          <div class="item-header">
+            <span class="item-title">당근마켓 - 중고차</span>
+            <div class="item-meta">
+              <span>2024.08 ~ 2025.02 (6개월)</span>
+              <span>·</span>
+              <span>Frontend Engineer Intern</span>
+            </div>
+          </div>
+
+          <div class="item-sub">
+            <span class="item-sub-title">중고차 어드민</span>
+            <ul>
+              <li>
+                매번 새로운 뷰를 만들어야 하는 어드민 페이지: 사진 목록 뷰어,
+                라벨-값 리스트, 데이터 필터 등 다양한
+                <b>데이터 중심의 디스플레이 컴포넌트</b> 개발로 복잡도 완화 및
+                효율 개선
+              </li>
+              <li>
+                페이지 간 연결이 없어 관련 정보 확인이 어려운 문제: 매번
+                페이지를 옮겨 검색하던 방식에서
+                <b>컨텍스트 메뉴로 즉시 접근 가능</b>하도록 UX 플로우 개선
+              </li>
+            </ul>
+          </div>
+
+          <div class="item-sub">
+            <span class="item-sub-title">클레임 처리 서비스</span>
+            <p class="item-sub-desc">
+              진단 내역과 차량 정보 불일치로 인한 클레임 처리 서비스를
+              만들었습니다.<br />0 to 1 부터 참여하여 프론트엔드 파트를
+              핸들링했습니다.
+            </p>
+            <ul>
+              <li>
+                조건부로 달라지는 컴포넌트 공통화:
+                <b>Compound Component 패턴</b>으로 재사용 및 부분 렌더링이
+                가능한 UI 컴포넌트를 설계하고, 노출되는 props를 최소화하여
+                개발자 친화적인 인터페이스를 제공.
+              </li>
+              <li>
+                진단 내역 확인과 검수를 동시에 해야하는 오퍼레이션 니즈: 화면
+                분할 뷰 및 검수 버전별 인라인 비교 기능 구현
+              </li>
+            </ul>
+          </div>
+
+          <div class="item-sub">
+            <span class="item-sub-title">중고차 경매 웹</span>
+            <ul>
+              <li>
+                매입 전 차량 사진 세부 확인이 어려운 문제: 사진 클릭시
+                <b>부분 확대 인터랙션</b>이 가능한 사진 뷰 컴포넌트 구현 및
+                공통화
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section">
+        <h2>Projects.</h2>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">Yourssu Infra System</span>
+              <span class="item-links">
+                <a
+                  href="https://yis-demo.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+                <span>·</span>
+                <a
+                  href="https://github.com/yourssu/yis-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2025.05 ~ 2025.06</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            숭실대학교 개발동아리 Yourssu의 온프렘 배포 시스템입니다. 기획
+            고도화, 전체 디자인 및 프론트엔드 개발을 담당했습니다. 토스증권
+            WTS를 벤치마킹하여 서비스 전체 디자인 및 에셋들을 제작했습니다.
+          </p>
+          <ul>
+            <li>
+              재사용성과 콘텐츠 중심 마크업 작성을 고려한 각종
+              <a
+                href="https://github.com/yourssu/yis-client/tree/main/src/components"
+                target="_blank"
+                rel="noopener noreferrer"
+                >UI 컴포넌트들 개발</a
+              >
+            </li>
+            <li>대화형 배포 심사 및 리소스 관리를 위한 어드민 페이지 구현</li>
+            <li>
+              디자인 토큰의 중복 선언 문제: CSS 토큰을 SSoT로써,
+              CSS/TailwindCSS/JS 간
+              <a
+                href="https://github.com/yourssu/yis-client/blob/main/scripts/codegen/gen-color.mts"
+                target="_blank"
+                rel="noopener noreferrer"
+                >토큰 동기화를 메타프로그래밍으로 자동화</a
+              >
+            </li>
+            <li>
+              사용처마다 상이한 에러 핸들링 로직: 예측 가능한 에러들을 단일
+              추상화 계층으로 통합해
+              <a
+                href="https://github.com/yourssu/yis-client/blob/main/src/utils/error.ts"
+                target="_blank"
+                rel="noopener noreferrer"
+                >에러 분류와 분류된 인터페이스를 통일</a
+              >함으로서, 일관된 핸들링 방식을 제공
+            </li>
+          </ul>
+          <div class="item-stack">
+            <span>React</span>
+            <span>Typescript</span>
+            <span>TailwindCSS</span>
+            <span>Motion</span>
+            <span>Tanstack Router</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">react-rolling-number</span>
+              <span class="item-links">
+                <a
+                  href="https://rolling.fecapark.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+                <span>·</span>
+                <a
+                  href="https://github.com/fecapark/react-rolling-number"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2025.12</span>
+              <span>·</span>
+              <span>오픈소스 라이브러리</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            부드럽고 커스터마이징 가능한 숫자 롤링 애니메이션 React
+            라이브러리입니다. 기존 라이브러리들의 제한적인 커스터마이징, 부족한
+            숫자 포맷 지원, 런타임 스타일 변경 대응 등의 불편함을 해소하고자
+            만들었습니다.
+          </p>
+          <ul>
+            <li>
+              커스터마이징: 부호, 정렬 위치, 콤마 등 표시 방식 및 애니메이션
+              방향, 지속 시간, 스태거 등 각종 애니메이션 옵션을 통한 폭넓은
+              커스터마이징 지원
+            </li>
+            <li>
+              넓은 숫자 커버리지: 문자열 타입의 숫자 지원으로 고정소수점이
+              가능하며 내부적으로 과학적 표기법을 숫자로 변환하는 로직을 통해
+              과학적 표기법도 지원
+            </li>
+            <li>
+              런타임 스타일 변경 대응: 부모 폰트 스타일을 상속받고,
+              <b>ResizeObserver</b>로 폰트 크기 변경에 따라 자동으로 스타일을
+              변경
+            </li>
+            <li>
+              환경 지원: esm/cjs 동시 지원 및 라이브러리 d.ts 파일로
+              타입스크립트 지원
+            </li>
+            <li>
+              모노레포 방식과 workspace 프로토콜로 라이브러리 변경 사항을
+              로컬에서 바로 확인 가능하도록 구현
+            </li>
+          </ul>
+          <div class="item-stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Vanilla Extract</span>
+            <span>Motion</span>
+            <span>Tsdown</span>
+            <span>Turborepo</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">Time Timer</span>
+              <span class="item-links">
+                <a
+                  href="https://time-timer.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Website</a
+                >
+                <span>·</span>
+                <a
+                  href="https://github.com/fecapark/time-timer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2022.12 ~ 2023.01</span>
+              <span>·</span>
+              <span>개인 프로젝트</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            남은 시간을 직관적이고 시각적으로 나타내는 타임 타이머 제품을 구현한
+            인터랙티브 프로젝트입니다. 단순히 인터랙션을 구현하는 것을 넘어,
+            자연스러운 범주 내에서 의도적인 트랜지션을 통한 사용자 시선 처리 및
+            행동 유도를 목표로 했습니다.
+          </p>
+          <ul>
+            <li>
+              타이머에 집중 유도: 타이머 외의 모든 UI 요소를 제거하고, 타이머
+              자체에만 집중할 수 있도록 디자인
+            </li>
+            <li>
+              시선 처리 및 행동 유도: 컴포넌트간 fade-in 딜레이를 다르게 주어
+              무의식적으로 시선이 따라가도록 유도하고, 경계를 인지시켜 다른
+              기능임을 인식시킴
+            </li>
+            <li>
+              인터랙션 없이 타이머 종료 알람 재생이 불가능한 문제: 타이머 시작
+              클릭 시 무음 오디오 재생 직후 알람 오디오로 교체해 재사용하면서
+              브라우저 정책 우회
+            </li>
+            <li>색상, 시간 등 타이머 커스터마이징 옵션 제공</li>
+            <li>기간별 사용 기록, 잔디 그래프 및 행동 분석 등 통계 뷰 구현</li>
+          </ul>
+          <div class="item-stack">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Emotion</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">메이플랜드 옥션</span>
+              <span class="item-links">
+                <a
+                  href="https://mapleland-auction-webui.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Website</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2024.02 ~ 2024.05</span>
+              <span>·</span>
+              <span>서비스</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            넥슨 메이플랜드 게임 내 일부 이용자들의 시세 조작으로 인해 정상적인
+            거래가 어려운 문제를 인식하고, 이를 해소하기 위해 다중 거래소
+            데이터를 자동 수집, 정제하는 시스템을 직접 설계했습니다. 혼자서 2주
+            만에 MVP를 완성하여 커뮤니티에서 화제를 얻었고, 월 PV 120만 이상 및
+            광고 수익화를 달성했습니다.
+          </p>
+          <ul>
+            <li>일별, 시간별 아이템 시세 통계 및 차트 시각화 뷰 제공</li>
+            <li>거래 동향 정보를 제공하는 가격순 및 거래량 트렌딩 뷰 구현</li>
+            <li>
+              디스코드 API 미지원으로 인한 채널 거래소 아이템 거래글 수집 문제:
+              Network 탭 분석으로 디스코드 내부 API를 역설계하여 세션 유지 및
+              게시글 데이터 수집
+            </li>
+            <li>
+              비선형적 아이템 게시글 분류 문제: 구매 유형, 아이템, 가격 등
+              키워드 간 상대적 거리 차이를 이용해 문맥 상의 거래 유형을 분류하는
+              문자열 거리 기반 알고리즘 구현
+            </li>
+            <li>
+              아이템 약어 및 갯수, 금액, 확률 관련 용어 혼재: 자주 사용되는
+              패턴들을 추출, 카테고라이징 후 분류하는 로직 구현
+            </li>
+            <li>
+              의도적 시세 조작 문제: Modified Z-Score 기반 이상치 탐지 알고리즘
+              적용, 이전 시세와의 괴리도 및 거래량 급등락을 고려해 자동
+              필터링으로 정확도 향상
+            </li>
+          </ul>
+          <div class="item-stack">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>TailwindCSS</span>
+            <span>Nivo</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Toys -->
+      <section class="section">
+        <h2>Toys.</h2>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">Metaball Interaction</span>
+              <span class="item-links">
+                <a
+                  href="https://fecapark.github.io/metaball-interaction/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+                <span>·</span>
+                <a
+                  href="https://github.com/fecapark/metaball-interaction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+                <span>·</span>
+                <a
+                  href="https://velog.io/@fecapark/%EC%9C%A0%EC%A0%80-%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%EA%B3%BC-%EB%A9%94%ED%83%80%EB%B3%BC-%ED%9A%A8%EA%B3%BC%EB%A5%BC-%ED%95%A9%EC%B9%98%EB%A9%B4-Metaball-Interaction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blog</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2024.06</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            메타볼 효과를 웹에 구현한 인터랙티브 프로젝트입니다. 퍼포먼스 향상을
+            위해 WebGL 라이브러리인 PIXI.js를 사용하여 구현했습니다.
+          </p>
+          <ul>
+            <li>
+              메타볼 구현을 위한 커스텀 필터 구현: Gaussian Blur와
+              Alpha-Threshold 필터가 필요했으나 PIXI.js에 Threshold 필터가 없어
+              GLSL로 직접 구현
+            </li>
+            <li>
+              프레임 단위로 스프링 효과가 적용된 오브젝트 위치를 계산해야하는
+              문제: 점화식으로 직접
+              <a
+                href="https://github.com/fecapark/metaball-interaction/blob/master/src/objects/gooeyBlob/updater/explodeUpdater.ts#L29-L63"
+                target="_blank"
+                rel="noopener noreferrer"
+                >스프링 효과 로직</a
+              >을 구현해서 위치를 렌더링하도록 구현
+            </li>
+            <li>
+              여러가지 메타볼을 만들어낼 수 있도록 파라미터를 조정하는 인스펙터
+              UI 제공
+            </li>
+          </ul>
+          <div class="item-stack">
+            <span>GLSL</span>
+            <span>PIXI.js</span>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <div class="item-title-row">
+              <span class="item-title">Material Form</span>
+              <span class="item-links">
+                <a
+                  href="https://fecapark.github.io/material-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
+                >
+                <span>·</span>
+                <a
+                  href="https://github.com/fecapark/material-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </span>
+            </div>
+            <div class="item-meta">
+              <span>2023.06</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            Google Material Design 소개 영상의 모션 그래픽에서 영감을 받아 만든
+            바닐라 JS 프로젝트입니다.
+          </p>
+          <ul>
+            <li>
+              bezier-easing 라이브러리 기반의
+              <a
+                href="https://github.com/fecapark/material-form/blob/master/src/lib/Animator/Animator.ts"
+                target="_blank"
+                rel="noopener noreferrer"
+                >애니메이션 타임라인 라이브러리</a
+              >
+              구현
+            </li>
+            <li>
+              연속적 애니메이션 구성의 편의를 위해 애니메이션 파라미터 캐싱
+              스토리지 구현
+            </li>
+          </ul>
+          <div class="item-stack">
+            <span>Vanilla JS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Experiences -->
+      <section class="section">
+        <h2>Other Experience.</h2>
+
+        <div class="item-block">
+          <div class="item-header">
+            <span class="item-title">Yourssu</span>
+            <div class="item-meta">
+              <span>24.04 ~ 현재</span>
+            </div>
+          </div>
+          <p class="item-desc">
+            숭실대학교 개발 동아리 유어슈에서 프론트엔드 파트 리드진으로
+            참여하고 있습니다. 숭실대학교 학생들이 사용하는 여러 서비스들을
+            만들고, 조직내에서 자유로운 개발 문화를 만들고 지식을 공유하여
+            선순환을 만들기 위해 노력하고 있습니다.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://odd-blinker-340.notion.site/1d93ca7ccc86802fbd0de15feadd3da0"
+                rel="noopener noreferrer"
+                target="_blank"
+                >코드리뷰 및 커뮤니케이션 아티클</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <span class="item-title"
+              >Google Developer Student Clubs / Google Developer Group</span
+            >
+            <div class="item-meta">
+              <span>23.09 ~ 25.09</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-block">
+          <div class="item-header">
+            <span class="item-title">숭실대학교 컴퓨터학부</span>
+            <div class="item-meta">
+              <span>20.03 ~ 현재 휴학중</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
